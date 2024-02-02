@@ -64,35 +64,33 @@ function randomSelection(arr){
 let newArray = [];
 let randomId = 0;
 
-while(newArray < 3) {
+while(newArray.length < 3) {
   randomId = randomSelection(idNumbers);
   if (!newArray.includes(randomId)){
        newArray.push(randomId);
-  };      
+       };      
 };
 console.log(newArray);
-/*
-let selectedCrew= [];
+
+let selectedCrew = [];
 function buildCrewArray(ids,candidates) {
 for(i=0;i<ids.length;i++) {
   for(j=0;j<candidates.length;j++) {
     if(candidates[j].astronautID === ids[i]) {
        selectedCrew.push(candidates[j]);
-
-       console.log(selectedCrew);
-    }
-    return selectedCrew;
-    }
+       }
+     }
   }
+  return selectedCrew;
 }
 
 let crew = buildCrewArray(newArray,animals);
 console.log(crew);
 
 // literal to print:
-//console.log(`${crew[0].name}, ${crew[1].name}, ${crew[2].name} "are going to space!" `);
+console.log(`${crew[0].name}, ${crew[1].name}, ${crew[2].name} "are going to space!" `);
 
-*/
+
 
 
 /*
