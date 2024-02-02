@@ -68,7 +68,7 @@ while(newArray < 3) {
   randomId = randomSelection(idNumbers);
   if (!newArray.includes(randomId)){
        newArray.push(randomId);
-  }      
+  };      
 };
 console.log(newArray);
 /*
