@@ -34,3 +34,8 @@ function printTestScores(index,test,students,scores){
   }
   return;
 }
+
+//TODO: Export all functions within an object.
+module.exports =printAll;
+
+
